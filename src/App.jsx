@@ -1,13 +1,13 @@
 import React from 'react'
 import NavBar from './components/navbar'
-import Main from './components/Main'
 import './styles.css'
 import AboutSection from './components/about-section'
-import Services from './components/Services'
-import Testimonials from './components/Testimonials'
+import Services from './components/services'
+import Testimonials from './components/testimonials'
 import Stars from './assets/stars'
-import Destiny from './components/Destiny'
-import Footer from './components/Footer'
+import Destiny from './components/destiny'
+import Footer from './components/footer'
+import Main from './components/main'
 
 function App() {
   return (
