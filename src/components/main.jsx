@@ -13,7 +13,7 @@ const Main = () => {
 
           <CiStar className="animate-ping text-yellow-200 absolute bottom-18 right-[50%]" />
 
-          <AiFillMoon className="animate-bounce  text-yellow-300 text-4xl absolute right-32 top-30" />
+          <AiFillMoon className="animate-bounce  text-yellow-300 text-4xl absolute right-32 top-17 sm:top-30" />
           
           <h1 className="text-7xl mb-5 font-bold"><span className="text-yellow-500">Shub</span> Astro</h1>
 

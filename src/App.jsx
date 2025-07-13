@@ -13,15 +13,15 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className='linear-bg px-10 sm:px-20'>
+      <div className='linear-bg px-5 sm:px-20'>
         <Main />
       </div>
-      <div className="px-10 md:px-20 bg-gray-200">
+      <div className="px-5 md:px-20 bg-gray-200">
         <AboutSection />
         <Services />
         <Testimonials />
       </div>
-      <div className="destiny-linear-bg px-10 md:px-20">
+      <div className="destiny-linear-bg px-5 md:px-20">
         <Destiny />
       </div>
       <div className="bg-2d3e50">

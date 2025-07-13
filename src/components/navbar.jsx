@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return(
     
-    <nav className="bg-slate-900/70 backdrop-blur-md z-10 fixed top-0 px-10 md:px-20 border-b border-slate-500 w-[100%]">
+    <nav className="bg-slate-900/70 backdrop-blur-md z-10 fixed top-0 px-5 md:px-20 border-b border-slate-500 w-[100%]">
 
       <div className="container mx-auto">
         
