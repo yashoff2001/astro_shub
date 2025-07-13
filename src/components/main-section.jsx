@@ -1,11 +1,10 @@
-import React from "react"
 import { CiStar } from "react-icons/ci";
 import { AiFillMoon } from "react-icons/ai";
 
-const Main = () => {
+const MainSection = () => {
   return (
     <>
-      <div className="container mx-auto py-10 sm:py-0 sm:h-[100dvh] flex flex-col justify-center">
+      <div className="container mx-auto py-10 sm:h-[100dvh] flex flex-col justify-center">
 
         <div className="text-neutral-300 text-center my-6">
 
@@ -37,4 +36,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default MainSection

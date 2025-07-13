@@ -1,34 +1,24 @@
-import React from 'react'
-import NavBar from './components/navbar'
+import { Route, Routes } from 'react-router-dom'
+import NavBar from './components/navbar';
 import './styles.css'
-import AboutSection from './components/about-section'
-import Services from './components/services'
-import Testimonials from './components/testimonials'
-import Stars from './assets/stars'
-import Destiny from './components/destiny'
-import Footer from './components/footer'
-import Main from './components/main'
+import HomePage from './pages/home';
+import About from './pages/about';
+import Contact from './pages/contact';
+import PageNoteFound from './pages/pageNotFound';
 
-function App() {
+
+function App () {
   return (
     <>
       <NavBar />
-      <div className='linear-bg px-5 sm:px-20'>
-        <Main />
-      </div>
-      <div className="px-5 md:px-20 bg-gray-200">
-        <AboutSection />
-        <Services />
-        <Testimonials />
-      </div>
-      <div className="destiny-linear-bg px-5 md:px-20">
-        <Destiny />
-      </div>
-      <div className="bg-2d3e50">
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={ <HomePage /> } />
+        <Route path="/about" element={ <About /> } />
+        <Route path="/contact" element={ <Contact /> } />
+        <Route path="/*" element={ <PageNoteFound /> } /> {/* Keep It in Last */}
+      </Routes>
     </>
   )
-}
+};
 
-export default App
+export default App;

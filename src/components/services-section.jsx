@@ -3,10 +3,10 @@ import { FaRegStar } from "react-icons/fa";
 import { IoMdSunny } from "react-icons/io";
 import { FiMoon } from "react-icons/fi";
 
-const Services = () => {
+const ServicesSection = () => {
   return (
     <>
-      <div className="container mx-auto lg:h-[100vh] flex flex-col justify-center py-10">
+      <div className="container mx-auto lg:h-[100vh] flex flex-col justify-center py-10" id="services-section">
         
         <h2 className="text-center text-5xl mb-5 text-slate-800 font-bold">Sacred <span className="text-yellow-500">Services</span></h2>
 
@@ -54,4 +54,4 @@ const Services = () => {
   )
 };
 
-export default Services;
+export default ServicesSection;
