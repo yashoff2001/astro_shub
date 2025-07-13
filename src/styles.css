@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+.bg-2d3e50{
+  background: #2d3e50;
+}
+
+.bg-b387e9{
+  background: #b387e9;
+}
+
+.bg-d3af37{
+  background: #d3af37;
+}
+
+.bg-bg-b388eb{
+  background: #b388eb;
+}
+
+.bg-b288ea{
+  background: #b288ea;
+}
+
+.bg-f4eace{
+  background: #f4eace;
+}
+
+.bg-eaede4{
+  background: #eaede4;
+}
+
+.bg-f1f6f0{
+  background: #f1f6f0;
+}
+
+.bg-2d3e50{
+  background: #2d3e50;
+}
+
+.linear-bg{
+  background: linear-gradient(135deg,rgba(45, 62, 80, 1) 45%, rgba(178, 136, 234, 1) 100%);
+}
+
+.destiny-linear-bg{
+  background: linear-gradient(90deg,rgba(44, 62, 80, 1) 0%, rgba(179, 136, 235, 1) 76%);
+}
+
+.text-b38aea{
+  color: #b38aea;
+}
+
+.text-d2ae35{
+  color: #d2ae35;
+}
+
+.text-d3af37{
+  color: #d3af37;
+}
+
+/* Tailwind Custom CSS Classes */
