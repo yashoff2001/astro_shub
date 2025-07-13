@@ -9,25 +9,27 @@ import { IoLocationOutline } from "react-icons/io5";
 const Footer = () => {
   return(
     <>
-      <div className="container mx-auto px-5 md:px-20 py-15">
+      <div className="container mx-auto px-5 md:px-20 pt-15">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 text-white">
+        <footer>
 
-          <div className="">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+
+          <section>
             <p className="flex gap-3 items-center text-3xl font-bold mb-6"><FaRegStar className="text-yellow-300 animate-pulse transition duration-700" /> Shub Astro</p>
             <p className="text-gray-300 mb-6">Illuminating paths through ancient wisdom and cosmic insight. Your journey to self-discovery and spiritual growth begins here.</p>
             <div className="flex gap-5 mb-5">
-              <div className="text-yellow-500 bg-yellow-100/60 cursor-pointer p-3 rounded-full text-2xl">
+              <div className="text-yellow-500 bg-yellow-100/30 cursor-pointer p-3 rounded-full text-2xl hover:scale-125 duration-300">
                 <FaFacebookF />
               </div>
-              <div className="text-yellow-500 bg-yellow-100/60 cursor-pointer p-3 rounded-full text-2xl">
+              <div className="text-yellow-500 bg-yellow-100/30 cursor-pointer p-3 rounded-full text-2xl hover:scale-125 duration-300">
                 <FaInstagram />
               </div>
-              <div className="text-yellow-500 bg-yellow-100/60 cursor-pointer p-3 rounded-full text-2xl">
+              <div className="text-yellow-500 bg-yellow-100/30 cursor-pointer p-3 rounded-full text-2xl hover:scale-125 duration-300">
                 <FaTwitter />
               </div>
             </div>
-          </div>
+          </section>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 mb-6">
 
@@ -68,6 +70,12 @@ const Footer = () => {
           </div>
           
         </div>
+          
+        </footer>
+
+        <hr className="text-slate-600" />
+        
+        <p className="text-center text-slate-600 py-5"> 2024 Celestial Guide. All rights reserved. I Crafted with cosmic energy and modern design.</p>
 
       </div>
     </>

@@ -1,7 +1,11 @@
+import ServicesSection from "../components/services-section";
+import Testimonials from "../components/testimonials";
+
 const Services = () => { 
   return (
-    <div className="px-5 md:px-20 bg-gray-200 h-[500px] place-content-center">
-      <h1>Services Page</h1>
+    <div className="px-5 md:px-20 py-10 bg-gray-200">
+      <ServicesSection />
+      <Testimonials />
     </div>
   );
 }

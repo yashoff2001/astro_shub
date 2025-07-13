@@ -5,7 +5,7 @@ import ProfilePic from '../assets/photo.jpeg'
 const AboutSection = () => {
   return (
     <>
-      <div className="container mx-auto lg:h-[100vh] flex flex-col justify-center py-10" id="about-section">
+      <div className="container mx-auto flex flex-col justify-center py-20" id="about-section">
 
         <div className="flex flex-col items-center mb-5">
           <h2 className="text-center text-5xl mb-5 text-slate-800 font-bold">About <span className="text-yellow-500">Your Guide</span></h2>

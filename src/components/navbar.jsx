@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link as RouterLink } from 'react-scroll';
+// import { Link as NavLink } from 'react-scroll';
+import { NavLink } from "react-router";
 import { CiMenuFries } from "react-icons/ci";
 import { FaTimes } from "react-icons/fa";
 
@@ -16,21 +17,25 @@ const NavBar = () => {
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 transition bg-slate-900/90">
       <ul className="text-center text-xl py-10 px-10 sm:px-20">
 
-        <li onClick={closeMenu} className="mb-4 pb-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-          <RouterLink to="/home" spy={true} smooth={true} duration={500}>Home</RouterLink>
-        </li>
+        <NavLink to="/home" spy={true} smooth={true} duration={500}>
+          <li onClick={closeMenu} className="mb-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
+          Home</li>
+          </NavLink>
 
+        <NavLink to="/about" spy={true} smooth={true} duration={500}>
         <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-          <RouterLink to="about-section" spy={true} smooth={true} duration={500}>About</RouterLink>
-        </li>
+          About</li>
+        </NavLink>
+        
+        <NavLink to="/services" spy={true} smooth={true} duration={500}>
+          <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
+          Services</li>
+        </NavLink>
 
-        <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-          <RouterLink to="services-section" spy={true} smooth={true} duration={500}>Services</RouterLink>
-        </li>
-
-        <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-          <RouterLink to="/contact" spy={true} smooth={true} duration={500}>Contact</RouterLink>
-        </li>
+        <NavLink to="/contact" spy={true} smooth={true} duration={500}>
+          <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
+          Contact</li>
+        </NavLink>
 
       </ul>
     </div>
@@ -57,19 +62,19 @@ const NavBar = () => {
               <ul className="flex gap-8 text-[18px] justify-end">
                 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <RouterLink to="/" spy={true} smooth={true} duration={500}>Home</RouterLink>
+                  <NavLink to="/home" spy={true} smooth={true} duration={500}>Home</NavLink>
                 </li>
 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <RouterLink to="about-section" spy={true} smooth={true} duration={500}>About</RouterLink>
+                  <NavLink to="/about" spy={true} smooth={true} duration={500}>About</NavLink>
                 </li>
 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <RouterLink to="services-section" spy={true} smooth={true} duration={500}>Services</RouterLink>
+                  <NavLink to="/services" spy={true} smooth={true} duration={500}>Services</NavLink>
                 </li>
 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <RouterLink to="/contact" spy={true} smooth={true} duration={500}>Contact</RouterLink>
+                  <NavLink to="/contact" spy={true} smooth={true} duration={500}>Contact</NavLink>
                 </li>
               </ul>
 
