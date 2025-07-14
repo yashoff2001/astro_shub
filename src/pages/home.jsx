@@ -3,8 +3,8 @@ import MainSection from '../components/main-section'
 import AboutSection from '../components/about-section'
 import Services from '../components/services-section'
 import Testimonials from '../components/testimonials'
-import Destiny from '../components/destiny'
-import Footer from '../components/footer'
+// import Destiny from '../components/destiny'
+// import Footer from '../components/footer'
 // import Stars from './assets/stars'
 
 function HomePage() {
@@ -18,12 +18,9 @@ function HomePage() {
         <Services />
         <Testimonials />
       </div>
-      <div className="destiny-linear-bg px-5 md:px-20">
+      {/* <div className="destiny-linear-bg px-5 md:px-20">
         <Destiny />
-      </div>
-      <div className="bg-2d3e50">
-        <Footer />
-      </div>
+      </div> */}
     </>
   )
 }

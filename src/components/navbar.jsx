@@ -17,22 +17,22 @@ const NavBar = () => {
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 transition bg-slate-900/90">
       <ul className="text-center text-xl py-10 px-10 sm:px-20">
 
-        <NavLink to="/home" spy={true} smooth={true} duration={500}>
+        <NavLink to="/home" spy={true} smooth="true" duration={500}>
           <li onClick={closeMenu} className="mb-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
           Home</li>
           </NavLink>
 
-        <NavLink to="/about" spy={true} smooth={true} duration={500}>
+        <NavLink to="/about" spy={true} smooth="true" duration={500}>
         <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
           About</li>
         </NavLink>
         
-        <NavLink to="/services" spy={true} smooth={true} duration={500}>
+        <NavLink to="/services" spy={true} smooth="true" duration={500}>
           <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
           Services</li>
         </NavLink>
 
-        <NavLink to="/contact" spy={true} smooth={true} duration={500}>
+        <NavLink to="/contact" spy={true} smooth="true" duration={500}>
           <li onClick={closeMenu} className="my-4 py-4 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
           Contact</li>
         </NavLink>
@@ -62,19 +62,19 @@ const NavBar = () => {
               <ul className="flex gap-8 text-[18px] justify-end">
                 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <NavLink to="/home" spy={true} smooth={true} duration={500}>Home</NavLink>
+                  <NavLink to="/home" spy={true} smooth="true" duration={500}>Home</NavLink>
                 </li>
 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <NavLink to="/about" spy={true} smooth={true} duration={500}>About</NavLink>
+                  <NavLink to="/about" spy={true} smooth="true" duration={500}>About</NavLink>
                 </li>
 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <NavLink to="/services" spy={true} smooth={true} duration={500}>Services</NavLink>
+                  <NavLink to="/services" spy={true} smooth="true" duration={500}>Services</NavLink>
                 </li>
 
                 <li onClick={closeMenu} className="p-3 text-white transition border-b-2 border-slate-500 hover:border-yellow-300 hover:text-yellow-200 cursor-pointer hover:bg-slate-800 hover:rounded">
-                  <NavLink to="/contact" spy={true} smooth={true} duration={500}>Contact</NavLink>
+                  <NavLink to="/contact" spy={true} smooth="true" duration={500}>Contact</NavLink>
                 </li>
               </ul>
 

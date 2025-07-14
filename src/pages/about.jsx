@@ -7,7 +7,7 @@ import Testimonials from '../components/testimonials'
 function AboutPage() {
   return (
     <>
-      <div className="px-5 md:px-20 bg-gray-200">
+      <div className="px-5 py-10 md:px-20 bg-gray-200">
         <AboutSection />
         <Services />
         <Testimonials />

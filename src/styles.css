@@ -44,6 +44,18 @@
   background: linear-gradient(90deg,rgba(44, 62, 80, 1) 0%, rgba(179, 136, 235, 1) 76%);
 }
 
+.contact-form-gradient-bg{
+  background: #2C3E50;
+  background: -webkit-linear-gradient(137deg,rgba(44, 62, 80, 1) 54%, rgba(179, 136, 235, 1) 100%);
+  background: -moz-linear-gradient(137deg,rgba(44, 62, 80, 1) 54%, rgba(179, 136, 235, 1) 100%);
+  background: linear-gradient(137deg,rgba(44, 62, 80, 1) 54%, rgba(179, 136, 235, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#2C3E50",
+    endColorstr="#B388EB",
+    GradientType=0
+  );
+}
+
 .text-b38aea{
   color: #b38aea;
 }
