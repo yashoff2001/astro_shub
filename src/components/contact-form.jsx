@@ -4,10 +4,11 @@ import axios from "axios";
 const ContactForm = () => {
 
     const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        service: "",
-        message: ""
+        name : "",
+        email : "",
+        phoneNumber : "",
+        service : "",
+        message : ""
     });
 
     const handleChange = (e) => {
@@ -25,7 +26,7 @@ const ContactForm = () => {
             const response = await axios.post('http://localhost:5000/api/contact', formData);
             if (response.status === 200) {
                 alert("Message sent successfully!");
-                setFormData({ name: "", email: "", service: "", message: "" });
+                setFormData({ name : "", email : "", phoneNumber : "", service : "", message : "" });
             } else {
                 alert("Something went wrong. Please try again.");
             }
@@ -53,6 +54,12 @@ const ContactForm = () => {
                 <div className="flex flex-col gap-3">
                     <label htmlFor="email">Email</label>
                     <input  type="text" name="email" placeholder="your.email@example.com" value={formData.email} onChange={handleChange} className="border border-zinc-600 p-2 rounded-xl outline-0" required />
+                </div>
+                
+                {/* Phone Number */}
+                <div className="flex flex-col gap-3">
+                    <label htmlFor="phoneNumber">Phone Number</label>
+                    <input  type="text" name="phoneNumber" placeholder="Enter Your Number" value={formData.phoneNumber} onChange={handleChange} className="border border-zinc-600 p-2 rounded-xl outline-0" required />
                 </div>
                 
                 {/* Services */}
